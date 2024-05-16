@@ -9,28 +9,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/favicon.png') }}">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/all.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/flaticon.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/plugins/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/plugins/flaticon.css') }}">
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/plugins/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/plugins/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/plugins/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/plugins/magnific-popup.css') }}">
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
 
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/vendor/plugins.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.min.css') }}"> -->
 
 </head>
 
@@ -57,43 +57,43 @@
                 <div class="header-wrap">
 
                     <div class="header-logo">
-                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/images/logo.png') }}" alt=""></a>
                     </div>
 
                     <div class="header-menu d-none d-lg-block">
                         <ul class="main-menu">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="{{ url_for('index') }}">Home</a>
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Home Main</a></li>
-                                    <li><a href="index-2.html">AI Solutions</a></li>
-                                    <li><a href="index-3.html">Cyber Security</a></li>
-                                    <li><a href="index-4.html">IT Solutions</a></li>
-                                    <li><a href="index-5.html">Software Company</a></li>
-                                    <li><a href="index-6.html">IT Agency</a></li>
+                                    <li><a href="{{ url_for('index') }}">Home Main</a></li>
+                                    <li><a href="{{ url_for('index_2') }}">AI Solutions</a></li>
+                                    <li><a href="{{ url_for('index_3') }}">Cyber Security</a></li>
+                                    <li><a href="{{ url_for('index_4') }}">IT Solutions</a></li>
+                                    <li><a href="{{ url_for('index_5') }}">Software Company</a></li>
+                                    <li><a href="{{ url_for('index_6') }}">IT Agency</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="about.html">Aboute Us</a>
+                                <a href="{{ url_for('about') }}">Aboute Us</a>
                             </li>
                             <li class="active-menu"><a href="#">Pages</a>
                                 <ul class="sub-menu">
-                                    <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="service.html">Service</a></li>
-                                    <li><a href="choose-us.html">Why Choose Us</a></li>
-                                    <li class="active"><a href="testimonial.html">Testimonial</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="login-register.html">Login & Register</a></li>
+                                    <li><a href="{{ url_for('team') }}">Our Team</a></li>
+                                    <li><a href="{{ url_for('service') }}">Service</a></li>
+                                    <li><a href="{{ url_for('choose_us') }}">Why Choose Us</a></li>
+                                    <li class="active"><a href="{{ url_for('testimonial') }}">Testimonial</a></li>
+                                    <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+                                    <li><a href="{{ url_for('login_register') }}">Login & Register</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Blog</a>
                                 <ul class="sub-menu">
-                                    <li><a href="blog.html">Blog Grid</a></li>
-                                    <li><a href="blog-standard.html">Blog List</a></li>
-                                    <li><a href="blog-details.html">Blog Single</a></li>
+                                    <li><a href="{{ url_for('blog') }}">Blog Grid</a></li>
+                                    <li><a href="{{ url_for('blog_standard') }}">Blog List</a></li>
+                                    <li><a href="{{ url_for('blog_details') }}">Blog Single</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ url_for('contact') }}">Contact</a></li>
                         </ul>
                     </div>
 
@@ -112,7 +112,7 @@
                                     <!-- Single Cart Item Start -->
                                     <div class="single-cart-item">
                                         <div class="item-image">
-                                            <img src="assets/images/shop-cart-1.jpg" alt="cart">
+                                            <img src="{{ url_for('static', filename='assets/images/shop-cart-1.jpg') }}" alt="cart">
                                         </div>
                                         <div class="item-content">
                                             <h4 class="title"><a href="#">Apple Iphone X</a></h4>
@@ -124,7 +124,7 @@
                                     <!-- Single Cart Item Start -->
                                     <div class="single-cart-item">
                                         <div class="item-image">
-                                            <img src="assets/images/shop-cart-2.jpg" alt="cart">
+                                            <img src="{{ url_for('static', filename='assets/images/shop-cart-2.jpg') }}" alt="cart">
                                         </div>
                                         <div class="item-content">
                                             <h4 class="title"><a href="#">Sony Xperia Tablet</a></h4>
@@ -136,7 +136,7 @@
                                     <!-- Single Cart Item Start -->
                                     <div class="single-cart-item">
                                         <div class="item-image">
-                                            <img src="assets/images/shop-cart-3.jpg" alt="cart">
+                                            <img src="{{ url_for('static', filename='assets/images/shop-cart-3.jpg') }}" alt="cart">
                                         </div>
                                         <div class="item-content">
                                             <h4 class="title"><a href="#">Camera Digital</a></h4>
@@ -182,7 +182,7 @@
                         <!-- Header Search End -->
 
                         <div class="header-btn d-none d-xl-block">
-                            <a class="btn" href="login-register.html">Get Started</a>
+                            <a class="btn" href="{{ url_for('login_register') }}">Get Started</a>
                         </div>
                         <!-- Header Toggle Start -->
                         <div class="header-toggle d-lg-none">
@@ -208,7 +208,7 @@
             <div class="offcanvas-header">
                 <!-- Offcanvas Logo Start -->
                 <div class="offcanvas-logo">
-                    <a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+                    <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/images/logo-white.png') }}" alt=""></a>
                 </div>
                 <!-- Offcanvas Logo End -->
                 <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
@@ -219,37 +219,37 @@
                 <div class="offcanvas-menu">
                     <ul class="main-menu">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="{{ url_for('index') }}">Home</a>
                             <ul class="sub-menu">
-                                <li><a href="index.html">Home Main</a></li>
-                                <li><a href="index-2.html">AI Solutions</a></li>
-                                <li><a href="index-3.html">Cyber Security</a></li>
-                                <li><a href="index-4.html">IT Solutions</a></li>
-                                <li><a href="index-5.html">Software Company</a></li>
-                                <li><a href="index-6.html">IT Agency</a></li>
+                                <li><a href="{{ url_for('index') }}">Home Main</a></li>
+                                <li><a href="{{ url_for('index_2') }}">AI Solutions</a></li>
+                                <li><a href="{{ url_for('index_3') }}">Cyber Security</a></li>
+                                <li><a href="{{ url_for('index_4') }}">IT Solutions</a></li>
+                                <li><a href="{{ url_for('index_5') }}">Software Company</a></li>
+                                <li><a href="{{ url_for('index_6') }}">IT Agency</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="about.html">Aboute Us</a>
+                            <a href="{{ url_for('about') }}">Aboute Us</a>
                         </li>
                         <li class="active-menu"><a href="#">Pages</a>
                             <ul class="sub-menu">
-                                <li><a href="team.html">Our Team</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="choose-us.html">Why Choose Us</a></li>
-                                <li class="active"><a href="testimonial.html">Testimonial</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="login-register.html">Login & Register</a></li>
+                                <li><a href="{{ url_for('team') }}">Our Team</a></li>
+                                <li><a href="{{ url_for('service') }}">Service</a></li>
+                                <li><a href="{{ url_for('choose_us') }}">Why Choose Us</a></li>
+                                <li class="active"><a href="{{ url_for('testimonial') }}">Testimonial</a></li>
+                                <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+                                <li><a href="{{ url_for('login_register') }}">Login & Register</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Blog</a>
                             <ul class="sub-menu">
-                                <li><a href="blog.html">Blog Grid</a></li>
-                                <li><a href="blog-standard.html">Blog List</a></li>
-                                <li><a href="blog-details.html">Blog Single</a></li>
+                                <li><a href="{{ url_for('blog') }}">Blog Grid</a></li>
+                                <li><a href="{{ url_for('blog_standard') }}">Blog List</a></li>
+                                <li><a href="{{ url_for('blog_details') }}">Blog Single</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -259,7 +259,7 @@
 
 
         <!-- Page Banner Start -->
-        <div class="section page-banner-section" style="background-image: url(assets/images/bg/page-banner.jpg);">
+        <div class="section page-banner-section" style="background-image: url({{ url_for('static', filename='assets/images/bg/page-banner.jpg') }});">
             <div class="shape-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="944px" height="894px">
                     <defs>
@@ -327,10 +327,10 @@
                                 <!--  Single Testimonial Start  -->
                                 <div class="single-testimonial-02">
                                     <div class="testimonial-thumb">
-                                        <img src="assets/images/testi-3.jpg" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-3.jpg') }}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <img src="assets/images/testi-icon.png" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-icon.png') }}" alt="">
                                         <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                         <span class="name">Mike Holder </span>
                                         <span class="designation"> / CEO, Harlond inc</span>
@@ -342,10 +342,10 @@
                                 <!--  Single Testimonial Start  -->
                                 <div class="single-testimonial-02">
                                     <div class="testimonial-thumb">
-                                        <img src="assets/images/testi-4.jpg" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-4.jpg') }}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <img src="assets/images/testi-icon.png" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-icon.png') }}" alt="">
                                         <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                         <span class="name">Mike Fermalin </span>
                                         <span class="designation"> / CEO, Harlond inc</span>
@@ -357,10 +357,10 @@
                                 <!--  Single Testimonial Start  -->
                                 <div class="single-testimonial-02">
                                     <div class="testimonial-thumb">
-                                        <img src="assets/images/testi-3.jpg" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-3.jpg') }}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <img src="assets/images/testi-icon.png" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-icon.png') }}" alt="">
                                         <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                         <span class="name">Mike Holder </span>
                                         <span class="designation"> / CEO, Harlond inc</span>
@@ -380,7 +380,7 @@
         <!-- Testimonial End  -->
 
         <!-- Testimonial Start  -->
-        <div class="section techwix-testimonial-section-02 section-padding" style="background-image: url(assets/images/bg/testi-bg2.jpg);">
+        <div class="section techwix-testimonial-section-02 section-padding" style="background-image: url({{ url_for('static', filename='assets/images/bg/testi-bg2.jpg') }});">
             <div class="container">
                 <!-- Testimonial Wrap Start  -->
                 <div class="testimonial-wrap-02">
@@ -390,10 +390,10 @@
                                 <!--  Single Testimonial Start  -->
                                 <div class="single-testimonial-02">
                                     <div class="testimonial-thumb">
-                                        <img src="assets/images/testi-1.jpg" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-1.jpg') }}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <img src="assets/images/testi-icon2.png" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-icon2.png') }}" alt="">
                                         <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                         <span class="name">Mike Holder </span>
                                         <span class="designation"> / CEO, Harlond inc</span>
@@ -405,10 +405,10 @@
                                 <!--  Single Testimonial Start  -->
                                 <div class="single-testimonial-02">
                                     <div class="testimonial-thumb">
-                                        <img src="assets/images/testi-2.jpg" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-2.jpg') }}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <img src="assets/images/testi-icon2.png" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-icon2.png') }}" alt="">
                                         <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                         <span class="name">Mike Fermalin </span>
                                         <span class="designation"> / CEO, Harlond inc</span>
@@ -420,10 +420,10 @@
                                 <!--  Single Testimonial Start  -->
                                 <div class="single-testimonial-02">
                                     <div class="testimonial-thumb">
-                                        <img src="assets/images/testi-1.jpg" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-1.jpg') }}" alt="">
                                     </div>
                                     <div class="testimonial-content">
-                                        <img src="assets/images/testi-icon2.png" alt="">
+                                        <img src="{{ url_for('static', filename='assets/images/testi-icon2.png') }}" alt="">
                                         <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                         <span class="name">Mike Holder </span>
                                         <span class="designation"> / CEO, Harlond inc</span>
@@ -446,11 +446,11 @@
         <div class="section techwix-testimonial-section section-padding-02">
             <div class="container">
                 <!-- Testimonial Wrap Start  -->
-                <div class="testimonial-wrap" style="background-image: url(assets/images/bg/testi-bg.jpg);">
+                <div class="testimonial-wrap" style="background-image: url({{ url_for('static', filename='assets/images/bg/testi-bg.jpg') }});">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="testimonial-img">
-                                <img src="assets/images/testi-img.png" alt="">
+                                <img src="{{ url_for('static', filename='assets/images/testi-img.png') }}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -460,7 +460,7 @@
                                         <div class="swiper-slide">
                                             <!--  Single Testimonial Start  -->
                                             <div class="single-testimonial">
-                                                <img src="assets/images/testi-icon.png" alt="">
+                                                <img src="{{ url_for('static', filename='assets/images/testi-icon.png') }}" alt="">
                                                 <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                                 <span class="name">Mike Holder </span>
                                                 <span class="designation"> / CEO, Harlond inc</span>
@@ -470,7 +470,7 @@
                                         <div class="swiper-slide">
                                             <!--  Single Testimonial Start  -->
                                             <div class="single-testimonial">
-                                                <img src="assets/images/testi-icon.png" alt="">
+                                                <img src="{{ url_for('static', filename='assets/images/testi-icon.png') }}" alt="">
                                                 <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                                 <span class="name">Mike Holder </span>
                                                 <span class="designation"> / CEO, Harlond inc</span>
@@ -480,7 +480,7 @@
                                         <div class="swiper-slide">
                                             <!--  Single Testimonial Start  -->
                                             <div class="single-testimonial">
-                                                <img src="assets/images/testi-icon.png" alt="">
+                                                <img src="{{ url_for('static', filename='assets/images/testi-icon.png') }}" alt="">
                                                 <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                                 <span class="name">Mike Holder </span>
                                                 <span class="designation"> / CEO, Harlond inc</span>
@@ -502,13 +502,13 @@
         <div class="section techwix-cta-section-02 section-padding-02">
             <div class="container">
                 <!-- Cta Wrap Start -->
-                <div class="cta-wrap" style="background-image: url(assets/images/bg/cta-bg.jpg);">
+                <div class="cta-wrap" style="background-image: url({{ url_for('static', filename='assets/images/bg/cta-bg.jpg') }});">
                     <div class="row align-items-center">
                         <div class="col-xl-9 col-lg-8">
                             <!-- Cta Content Start -->
                             <div class="cta-content">
                                 <div class="cta-icon">
-                                    <img src="assets/images/cta-icon2.png" alt="">
+                                    <img src="{{ url_for('static', filename='assets/images/cta-icon2.png') }}" alt="">
                                 </div>
                                 <p>We’re Delivering the best customer Experience</p>
                             </div>
@@ -530,7 +530,7 @@
 
 
         <!-- Footer Section Start -->
-        <div class="section footer-section footer-section-03" style="background-image: url(assets/images/bg/footer-bg.jpg);">
+        <div class="section footer-section footer-section-03" style="background-image: url({{ url_for('static', filename='assets/images/bg/footer-bg.jpg') }});">
 
             <div class="container">
                 <!-- Footer Widget Wrap Start -->
@@ -539,7 +539,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <!-- Footer Widget Start -->
                             <div class="footer-widget-about">
-                                <a class="footer-logo" href="index.html"><img src="assets/images/logo-white.png" alt="Logo"></a>
+                                <a class="footer-logo" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/images/logo-white.png') }}" alt="Logo"></a>
                                 <p>Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent.</p>
                                 <div class="footer-social">
                                     <ul class="social">
@@ -656,28 +656,28 @@
 
     <!-- JS
     ============================================ -->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
 
     <!-- Bootstrap JS -->
-    <script src="assets/js/plugins/popper.min.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/bootstrap.min.js') }}"></script>
 
     <!-- Plugins JS -->
-    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assets/js/plugins/aos.js"></script>
-    <script src="assets/js/plugins/waypoints.min.js"></script>
-    <script src="assets/js/plugins/back-to-top.js"></script>
-    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
-    <script src="assets/js/plugins/appear.min.js"></script>
-    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/back-to-top.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/jquery.counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/appear.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/plugins/jquery.magnific-popup.min.js') }}"></script>
 
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
 
 
     <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 </body>
 
